@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Maternal and Child Care</title>
+        <style>
+            html, body {
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                background: url("pregnancy-1.jpg") center/cover no-repeat;
+                font-family: "Cooper Black";
+                overflow: hidden;
+            }
+
+            .flex-container {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                height: 100%;
+                background-color: rgba(255, 255, 255, 0.767); 
+                padding: 20px; 
+            }
+            
+            .flex-container div {
+                text-align: left;
+                color: #333; 
+                margin-left: 200px;
+                position: relative;
+            }
+
+            h1 {
+                margin-bottom: 20px; 
+            }
+
+            button {
+                margin-left: 120px;
+                padding: 10px 20px; 
+                font-size: 16px;
+                font-family:"Cooper Black";
+                background-color:#ECB4B6;
+                color: rgb(255, 255, 255);
+                border:none;
+                border-radius:20px;   
+            }
+        </style>
+    </head>
+    <body>
+        <div class="flex-container">
+            <div>
+                <h1>Maternal and Child Care</h1>
+                <button type="button" onclick="PHR()">Patient</button>
+                <br><br>
+                <button type="button" onclick="EMR()">Hospital</button>
+            </div>
+        </div>
+
+        <script>
+            function PHR() {
+                window.location.href = "login.html";
+            }
+
+            function EMR() {
+                window.location.href = "hospital.html";
+            }
+        </script>
+    </body>
+</html>
